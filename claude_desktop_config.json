@@ -1,0 +1,20 @@
+{
+    "mcpServers": {
+      "mulesoft-exchange": {
+        "command": "docker",
+        "args": [
+          "exec", 
+          "-i", 
+          "mcp-mulesoft-server", 
+          "python", 
+          "mcp_server.py"
+        ],
+        "env": {
+          "ANYPOINT_URL": "https://anypoint.mulesoft.com",
+          "CLIENT_ID": "",
+          "CLIENT_SECRET": "",
+          "ORG_ID": ""
+        }
+      }
+    }
+  }
